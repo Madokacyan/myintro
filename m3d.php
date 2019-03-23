@@ -3,8 +3,7 @@
 <meta charset="utf-8">
 <title>© Copyright MADOKA WU since 2015</title>
 <link href="m1page.css" rel="stylesheet" type="text/css">
-<!--「自動偵測銀幕」語法上網查copy,貼在head下 
-否則流變式指會顯示在PC, 有此語法才能真正顯示在各螢幕版面上-->
+	
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--外掛帶入滾動式語法CSS如下-->
@@ -54,7 +53,6 @@
 
 			<div id="nav-dots" class="nav-dots">
 					<span class="nav-dot-current"></span>
-					<span></span>
 					<span></span>
 					<span></span>
 			</div>
