@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*橘色color:#FE9C03;
+粉色color:#F1B6AE;
+草色color:#969514;
+湖色color:#4EA696;
+黃色color:#FCDE8E;
+天色color:#9aabe1;
+*/
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	color:#FCDE8E;
+	font-weight:bolder;
+	font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    min-width: 319px;
+}
+
+#menu {
+	z-index:1;
+	display:inline-block;
+	width: 100%;
+	position: fixed;
+	background-color:rgba(78, 166, 150, 0.6);
+	font-size:4vmin;
+	line-height:5vmax;
+	text-align: center;
+	word-spacing:1vmin; 
+}
+	/*	box-shadow:0 50px 50px #4EA696;
+	overflow:hidden;*/
+#menu a {
+	display:inline-block;
+	color: #FFF;
+	text-decoration: none;
+	text-shadow:0px 0px 15px #FCDE8E;
+	border:7px solid;
+	border-color:rgb(78, 166, 150, 0);
+	transition: background 1s ease;
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-webkit-transition: all 1s ease;
+	
+ }	/*menu橫列間距margin-left: 30px;*/
+
+
+#menu a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow:3px 3px 3px #4EA696;
+	font-weight:bolder;
+	background-color:#F1B6AE;
+	border:4px solid #FFFFFF;
+	border-radius:10px;
+/*	animation: 1s double forwards;
+*/}
+
+/*@keyframes double {
+  from {
+    background: #4EA696;
+  }
+  
+  to {
+    background: #F1B6AE;
+  }
+}
+*/
+#menu a:active{
+	background-color:#F1B6AE;
+}
+
+
+/*transition 預設是對所有可套用的屬性做轉場效果，也就是關鍵字 all。
+不是所有 CSS 屬性都可以使用 transition ，可以參考這篇https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties。transition 的開始和結束都必須是具體數值； CSS 屬性值之間是無法被計算的，就無法使用 transition。
+
+如果希望對兩個以上的屬性做 transition ，可是又不希望影響其他屬性時，可以用逗號 , 將要做 transition 的屬性分隔開來。
+ transition: color .25s linear, background-color .15s linear .1s;
+有時候我們需要先變換一個屬性，再變換另一個屬性，這時候就需要對後者加入一個延遲時間；它需要加在原先我們定義好的歷時時間之後。*/
+/*
+.menu {
+	z-index:1;
+	width: 100%;
+	position: fixed;
+	background-color:#4EA696;
+	font-size:115%;
+	line-height: 400%;
+	text-align: center;
+	word-spacing:1px; 
+	border:0px #4EA696;
+	box-shadow:0 50px 50px #4EA696;
+	display:inline-block;
+}
+	
+.menu a {
+	width:5%;
+	display:inline-block;
+	color: #FFF;
+	text-decoration: none;
+	text-shadow:0px 0px 15px #FCDE8E;
+	border:3px solid #4EA696;
+	transition: background 1s ease;
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-webkit-transition: all 1s ease;
+	
+ }	
+
+
+.menu a:hover {
+	width:5%;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow:3px 3px 3px #4EA696;
+	font-weight:bolder;
+	background-color:#F1B6AE;
+	border:3px solid #FFFFFF;
+	border-radius:10px;
+}
+
+
+.menu a:active{
+	background-color:#F1B6AE;
+}
+
+---------.menu---------------*/
+
+.wrapper {
+	position: relative;
+	max-width: 70%;
+	padding:5% 10%;
+	margin:auto;
+}
+
+#block1{
+	padding-top: 10%;
+}/*高度自動符合顯示器height:100vh符合頁面尺寸變換大小
+vm是寬度*/
+
+#block2{
+	padding-top:5%;
+	background-image:url(mphoto/m0201.JPG);
+	background-size:contain;
+	background-position:center;
+	height:100vh;
+}
+
+#block3{
+	padding-top:5%;
+}
+/*注意使最下面區域剛好點到時在其最上面,
+不會看到上一區,下方要有空間可往下*/
+
+
+#goTop{
+	width:40px;
+	position:fixed;
+	background-color:#4EA696;
+	right:30PX;
+	bottom:30PX;
+	line-height:30px;
+	border-radius:20PX;
+	cursor:pointer;
+	text-align:center;
+	border:3px solid #F1B6AE;
+	color:#FFF;
+}
+/*DIV區域沒設定時預設在左下角*/
+
+footer {
+	background-color: #FFF;
+	word-spacing: 4px;
+	color: #4EA696;
+	text-align: center;
+	line-height: 215%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
